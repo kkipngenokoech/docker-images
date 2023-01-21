@@ -101,3 +101,16 @@ MAINTAINER kkipngenokoech@gmail.com
 RUN apt-get update
 RUN apt-get install nginx -y
 CMD["ECHO","IMAGE CREATOR"]
+```
+
+to build this image you use the build image command: `docker build -t dockermultiverse .` - the last dot is necessary because you have to tell docker where it is creating from.
+
+to create an image from it, you use `docker run <image-id>`
+
+to get the image-id you run `docker images` then it will give you the id of the image
+
+## docker registry
+
+this is a place where we store our images(Docker Hub) - like github
+
+it can be private ot public.
